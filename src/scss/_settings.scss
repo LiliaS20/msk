@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap&subset=cyrillic-ext');
+
+$def-color: #363B6A;
+
+*{
+  box-sizing: border-box;
+  color: $def-color;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  //background-color: #E5E5E5;
+}
+
+html, body{
+  min-height: 100vh!important;
+  height: 100%!important;
+  margin: 0;
+}
+
+main{
+  flex: 1 0 auto;
+}
+footer, header{
+  flex: 0 0 auto;
+}
+
+*::before, *::after{
+  max-width: 100%;
+}
+
+ul{
+  margin: 0;
+}
+
+li{
+  margin: 0;
+  padding: 0;
+}
+
+img, svg{
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-size: 1.15rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: $def-color;
+  text-decoration: none;
+}
+
+p, span, a{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+  color: $def-color;
+  text-decoration: none;
+
+  &:hover{
+    color: $def-color;
+    text-decoration: none;
+  }
+}
+
+input{
+  max-width: 100%;
+}
+
+input[type="submit"]{
+  padding: 1px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
