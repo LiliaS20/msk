@@ -1,3 +1,46 @@
 .main{
   padding-top: 80px;
+
+  p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  h2 {
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  .creature {
+
+    &__info {
+      padding-top: 10px;
+
+      .title {
+      }
+
+      &__top {
+
+        img {
+        }
+      }
+
+      &__bottom {
+
+        .title {
+          display: none;
+        }
+      }
+    }
+
+    &__slider {
+
+    }
+
+    &__cards {
+
+
+    }
+  }
 }
+
