@@ -41,9 +41,12 @@ and (min-width: 768px){
 
       }
 
-      &__card {
+      &__cards {
+        display: flex;
+        justify-content: space-between;
       }
     }
+
   }
 }
 

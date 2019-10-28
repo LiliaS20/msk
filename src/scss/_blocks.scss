@@ -1,17 +1,23 @@
 .card {
-  border: 1px solid $bluecolor;
   padding: 30px 20px;
   margin-bottom: 30px;
+  margin-right: 30px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 60px rgba(217, 217, 217, 1);
+  transition: border 0.3s;
 
   &:last-child{
-    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  &:hover {
+    border: 1px solid $bluecolor;
   }
 
   h3 {
     font-size: 26px;
     text-align: right;
     padding-bottom: 20px;
-
   }
 
   ul {
@@ -21,10 +27,6 @@
     li {
       padding-bottom: 10px;
       font-size: 16px;
-
-      &:last-child {
-        padding-bottom: 0;
-      }
     }
   }
 
