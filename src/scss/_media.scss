@@ -1,7 +1,7 @@
 @media screen
-and (min-width: 768px){
+and (min-width: 768px) {
 
-  .main{
+  .main {
     padding-top: 91px;
 
     P {
@@ -15,7 +15,17 @@ and (min-width: 768px){
       line-height: 50px;
     }
 
+    .header-menu {
+      display: block;
+
+
+
+
+
+    }
+
     .creature {
+      margin-bottom: 90px;
 
       &__info {
         display: flex;
@@ -45,8 +55,63 @@ and (min-width: 768px){
         display: flex;
         justify-content: space-between;
       }
-    }
 
+    .advant {
+
+        .block {
+          width: 325px;
+        }
+
+        .b3 {
+
+        }
+
+        .b4 {
+          top: -30px;
+        }
+
+        .b5 {
+
+        }
+
+        .b6 {
+          top: -83px;
+        }
+      }
+
+    .about {
+
+        .creature__info {
+          display: flex;
+          align-items: center;
+
+          .title {
+            display: none;
+          }
+
+          &__top {
+
+              img {
+              }
+
+
+
+
+          }
+
+          &__bottom {
+
+            .title2 {
+              display: block;
+            }
+
+            .lk {
+              display: block;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -66,6 +131,40 @@ and (min-width: 1200px){
       font-size: 62px;
       font-weight: 100;
       line-height: 68px;
+    }
+
+    .creature {
+      margin-bottom: 155px;
+    }
+
+    .card {
+
+      .button {
+
+        button{
+          width: 300px;
+          height: 90px;
+        }
+      }
+    }
+
+    .advant {
+
+      .block {
+        width: 350px;
+      }
+
+      .b4 {
+        top: -45px;
+      }
+
+      .b5 {
+        top: -108px;
+      }
+
+      .b6 {
+        top: -16px;
+      }
     }
   }
 }

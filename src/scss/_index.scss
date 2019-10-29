@@ -9,16 +9,20 @@
   h2 {
     font-size: 48px;
     font-weight: 400;
+    line-height: 60px;
   }
 
   .header-menu {
-    margin-top: 65px;
+    display: none;
+    margin-top: 45px;
+    margin-bottom: 55px;
+    position: relative;
 
     .head {
       list-style: none;
 
       > li {
-        margin-bottom: 75px;
+        margin-bottom: 45px;
 
 
         &:last-child {
@@ -57,7 +61,6 @@
           &:hover:after {
             width: calc(100% + 20px);
           }
-
         }
 
         ul {
@@ -68,7 +71,6 @@
             list-style: none;
             text-indent: -1em;
             margin-bottom: 18px;
-
 
             &::before {
               content: '\25ba';
@@ -88,20 +90,18 @@
 
       }
     }
-  }
-
-  .header-img {
-    position: relative;
 
     img {
       position: absolute;
-      left: 80px;
-      top: 0;
+      left: 37%;
+      top: 30px;
+      width: 846px;
     }
+
   }
 
-
   .creature {
+    margin-bottom: 60px;
 
     &__info {
       padding-top: 10px;
@@ -125,19 +125,23 @@
     }
 
     &__slider {
-
     }
 
     &__cards {
-
     }
   }
 
   .ads {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 60px;
 
     &__top {
+      display: grid;
+      align-items: center;
+      margin-bottom: 40px;
+
+
 
     }
 
@@ -145,6 +149,11 @@
 
       .bottom {
         margin: 0;
+        margin-bottom: 30px;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
 
         ul {
           margin: 0;
@@ -154,14 +163,181 @@
       .center {
         display: flex;
 
-        p {
-          display: flex;
-          justify-content: flex-end;
-          align-items: flex-end;
+          p {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-bottom: 0;
         }
-
       }
     }
   }
+
+  .bitrix {
+
+    h2 {
+      padding-bottom: 10px;
+    }
+
+    img {
+      padding-bottom: 20px;
+    }
+
+    p {
+      padding-bottom: 30px;
+    }
+
+    .button {
+
+      button {
+        width: 300px;
+      }
+    }
+
+
+  }
+
+  .advant {
+    background-color: #28ad83;
+    margin-bottom: 80px;
+
+    .white {
+      color: #fff;
+      padding: 30px 0;
+    }
+
+    &__cont {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+      position: relative;
+      padding-bottom: 30px;
+
+      .block {
+        width: 300px;
+        background-color: #fff;
+        padding: 50px 20px 30px;
+        margin: 20px 10px 0;
+        position: relative;
+
+        span {
+          position: absolute;
+          font-size: 105px;
+          font-weight: bold;
+          color: #a3dfda;
+          left: 40px;
+          top: 20px;
+          z-index: 10;
+        }
+
+        h3 {
+          position: relative;
+          z-index: 101;
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 40px;
+          line-height: 28px;
+        }
+
+        p {
+          position: relative;
+          z-index: 101;
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+
+      .b2 {
+
+          h3 {
+            margin-bottom: 10px;
+          }
+      }
+
+      .b3 {
+
+        h3 {
+          margin-bottom: 66px;
+          top: 10px;
+        }
+      }
+
+      .b4 {
+
+        h3 {
+          margin-bottom: 30px;
+        }
+      }
+
+      .b5 {
+
+        h3 {
+          margin-bottom: 56px;
+          margin-top: 18px;
+        }
+
+        p {
+          margin-bottom: 9px;
+        }
+      }
+
+      .b6 {
+
+        h3 {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .about {
+
+    .creature__info {
+      padding-top: 10px;
+      margin-bottom: 80px;
+
+      .title {
+
+        p {
+          display: block;
+        }
+      }
+
+      &__top {
+
+        img {
+        }
+      }
+
+      &__bottom {
+        background-color: red;
+
+        .title2 {
+          display: none;
+        }
+
+        .lk {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .map {
+    position: relative;
+
+    .blue {
+      background-color: rgba(0, 167, 174, 0.8);
+      height: 200px;
+      width: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    }
 }
+
 

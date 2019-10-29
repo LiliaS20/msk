@@ -1,3 +1,5 @@
+
+
 .card {
   padding: 30px 20px;
   margin-bottom: 30px;
@@ -6,7 +8,7 @@
   box-shadow: 0 0 60px rgba(217, 217, 217, 1);
   transition: border 0.3s;
 
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
 
@@ -35,6 +37,7 @@
     text-align: right;
     padding-bottom: 30px;
   }
+}
   
   .button {
     display: flex;
@@ -47,7 +50,12 @@
       text-align: center;
       color: #fff;
       font-size: 24px;
-      border: none;
+      font-weight: 600;
+      border: 1px solid $orangecolor;
+      
+      &:hover {
+        background-color: #fff;
+        color: $orangecolor;
+      }
     }
   }
-}
