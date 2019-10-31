@@ -60,4 +60,42 @@
   });
 
 
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:1
+      },
+      1000:{
+        items:1
+      }
+    }
+  });
+
+
+
+  var form = document.getElementsByClassName("form");
+  var butform = document.getElementsByClassName("but-form");
+  var close = document.getElementsByClassName("close");
+
+  butform.onclick = function (){
+    form.style.display = "none";
+  }
+
+  close.onclick = function (){
+    form.style.display = "block";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == form) {
+      modal.style.display = "none"
+    }
+  }
+
+
 
