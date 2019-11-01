@@ -106,10 +106,15 @@
             display: block;
             padding: 3px 0;
             font-size: 22px;
+
+            &:hover {
+              border-bottom: 2px solid $orangecolor;
+            }
           }
         }
       }
     }
+
 
     nav.double-trouble {
       display: none;

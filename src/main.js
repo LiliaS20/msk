@@ -79,23 +79,31 @@
 
 
 
-  var form = document.getElementsByClassName("form");
-  var butform = document.getElementsByClassName("but-form");
-  var close = document.getElementsByClassName("close");
+  var form = document.getElementById("myform");
+  var formm = document.getElementById("thank");
+  var butform = document.getElementById("buy");
+  var send = document.getElementById("send");
+  var span = document.getElementsByClassName("close")[0];
 
   butform.onclick = function (){
+    form.style.display = "block";
+  }
+
+  span.onclick = function (){
     form.style.display = "none";
   }
 
-  close.onclick = function (){
-    form.style.display = "block";
+  send.onclick = function () {
+    formm.style.display = "block";
+    form.style.display = "none";
   }
 
   window.onclick = function(event) {
     if (event.target == form) {
-      modal.style.display = "none"
+      form.style.display = "none"
     }
   }
+
 
 
 
