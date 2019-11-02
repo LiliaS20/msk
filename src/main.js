@@ -4,6 +4,8 @@
 
     console.log('YEP');
 
+    //POPUP MENU ON
+
     function forRes() {
       var wWindow = $(window).width();
       console.log(wWindow);
@@ -33,8 +35,8 @@
 
             $('.header-logo__burger').on('click', function () {
 
-                $('.one-trouble').toggleClass('move-left');
-                $('.header').toggleClass('burger-opened');
+              $('.one-trouble').toggleClass('move-left');
+              $('.header').toggleClass('burger-opened');
             });
 
 
@@ -54,6 +56,9 @@
 
     forRes();
 
+    //POPUP MENU OFF
+
+    //SLIDER ON
 
     $('.owl-carousel').owlCarousel({
       loop:true,
@@ -73,7 +78,9 @@
       }
     });
 
-    var form = document.getElementById("myform");
+    //SLIDER OFF
+
+    /* var form = document.getElementById("myform");
     var formm = document.getElementById("thank");
     var butform = document.getElementById("buy");
     var send = document.getElementById("send");
@@ -96,6 +103,18 @@
       if (event.target == form) {
         form.style.display = "none"
       }
-    };
+    }; */
+
+    $('.creature__cards button, .ads button').on('click', function () {
+
+      $('#myform').fadeToggle();
+
+    });
+
+    $('#myform span.close').on('click', function () {
+
+      $('#myform').fadeToggle();
+
+    });
 
   });

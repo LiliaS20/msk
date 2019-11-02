@@ -34,33 +34,35 @@
           position: relative;
           width: 100%;
 
-          &:before {
+          &:hover{
+
+            span::after{
+              width: 100%;
+            }
+          }
+
+          span{
             position: absolute;
             background-color: $orangecolor;
             display: block;
-            content: "";
-            height: 2px;
+            height: 1px;
             width: 100vw; //calc (100% + 20px);
             right: -30px;
             top: 30px;
-            max-width: none;
-          }
+            //max-width: none;
 
-          &:after {
-            background-color: black;//$orangecolor;
-            display: block;
-            position: absolute;
-            left: 30px;
-            top: 32px;
-            content: "";
-            height: 2px;
-            width: 0%;
-            max-width: none;
-            transition: width 0.3s;
-          }
-
-          &:hover:after {
-            width: 100%;
+            &::after{
+              background-color: $orangecolor;
+              display: block;
+              position: absolute;
+              left: 0;
+              top: 2px;
+              content: "";
+              height: 1px;
+              width: 0%;
+              max-width: none;
+              transition: width 0.3s;
+            }
           }
         }
 
@@ -287,10 +289,7 @@
 
   .advant {
     background-color: #28ad83;
-    //margin-bottom: 80px;
-    width: 400px;
-    max-width: 100%;
-    margin: 0  auto 80px;
+    margin-bottom: 80px;
 
     .white {
       color: #fff;

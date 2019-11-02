@@ -120,7 +120,8 @@
     padding: 55px 20px 40px;
     background-color: #fff;
     margin: auto;
-    width: 95%;
+    width: 760px;
+    max-width: calc(100% - 30px);
 
     .close {
       position: absolute;
