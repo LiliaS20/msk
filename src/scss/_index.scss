@@ -2,12 +2,12 @@
   padding-top: 80px;
 
   p {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   h2 {
-    font-size: 48px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 60px;
   }
@@ -102,9 +102,19 @@
   .creature {
     margin-bottom: 60px;
 
+    .row:last-child{
+
+      .creature__cards{
+
+        .card:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+
     &__info {
       padding-top: 10px;
-      margin-bottom: 130px;
+      margin-bottom: 30px;
 
       .title {
       }
@@ -196,7 +206,6 @@
 
     &__cards {
 
-
     }
   }
 
@@ -278,8 +287,10 @@
 
   .advant {
     background-color: #28ad83;
-    margin-bottom: 80px;
-
+    //margin-bottom: 80px;
+    width: 400px;
+    max-width: 100%;
+    margin: 0  auto 80px;
 
     .white {
       color: #fff;

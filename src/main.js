@@ -55,55 +55,47 @@
     forRes();
 
 
-
-
-  });
-
-
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-    nav:true,
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:1
-      },
-      1000:{
-        items:1
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:0,
+      nav:true,
+      dots: false,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:1
+        },
+        1000:{
+          items:1
+        }
       }
-    }
+    });
+
+    var form = document.getElementById("myform");
+    var formm = document.getElementById("thank");
+    var butform = document.getElementById("buy");
+    var send = document.getElementById("send");
+    var span = document.getElementsByClassName("close")[0];
+
+    butform.onclick = function (){
+      form.style.display = "block";
+    };
+
+    span.onclick = function (){
+      form.style.display = "none";
+    };
+
+    send.onclick = function () {
+      formm.style.display = "block";
+      form.style.display = "none";
+    };
+
+    window.onclick = function(event) {
+      if (event.target == form) {
+        form.style.display = "none"
+      }
+    };
+
   });
-
-
-
-  var form = document.getElementById("myform");
-  var formm = document.getElementById("thank");
-  var butform = document.getElementById("buy");
-  var send = document.getElementById("send");
-  var span = document.getElementsByClassName("close")[0];
-
-  butform.onclick = function (){
-    form.style.display = "block";
-  }
-
-  span.onclick = function (){
-    form.style.display = "none";
-  }
-
-  send.onclick = function () {
-    formm.style.display = "block";
-    form.style.display = "none";
-  }
-
-  window.onclick = function(event) {
-    if (event.target == form) {
-      form.style.display = "none"
-    }
-  }
-
-
-
-

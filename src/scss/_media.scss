@@ -36,6 +36,16 @@ and (min-width: 768px) {
     .creature {
       margin-bottom: 90px;
 
+      .row:last-child{
+
+        .creature__cards{
+
+          .card:first-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+
       &__info {
         display: flex;
         align-items: center;
@@ -134,7 +144,15 @@ and (min-width: 768px) {
       }
     }
 
+    .ads{
+
+      &__top{
+        margin-bottom: 0;
+      }
+    }
+
     .advant {
+      width: 100%;
 
         .block {
           width: 325px;
@@ -207,7 +225,6 @@ and (min-width: 1200px){
   .main{
     padding-top: 130px;
 
-
     p {
       font-size: 22px;
       line-height: 1.5;
@@ -234,6 +251,10 @@ and (min-width: 1200px){
 
     .creature {
       margin-bottom: 155px;
+
+      &__info{
+        margin-bottom: 130px;
+      }
 
       &__slider {
 
@@ -268,7 +289,6 @@ and (min-width: 1200px){
         }
       }
     }
-
 
     .card {
 
