@@ -344,7 +344,7 @@ and (min-width: 1200px){
     &-logo{
 
       &__burger{
-
+        margin-right: 15px;
       }
 
       &__link{
@@ -352,7 +352,7 @@ and (min-width: 1200px){
         img{
           width: 100px;
           height: 100px;
-          margin-right: 5px;
+          margin-right: 20px;
         }
 
         span{
@@ -372,6 +372,21 @@ and (min-width: 1200px){
 
             a{
               font-size: 24px;
+            }
+          }
+        }
+      }
+
+      nav.double-trouble{
+
+        ul{
+
+          li{
+
+            a{
+              font-size: 20px;
+              text-align: center;
+              padding: 0;
             }
           }
         }
