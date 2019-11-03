@@ -1,6 +1,6 @@
 .header {
   padding-top: 10px;
-  //padding-bottom: 30px;
+  padding-bottom: 30px;
   position: fixed;
   left: 0;
   right: 0;
@@ -261,7 +261,6 @@ and (min-width: 768px){
 
       &__burger{
         opacity: 0;
-        margin-right: 0;
 
         &.active{
           opacity: 1;
@@ -286,8 +285,7 @@ and (min-width: 768px){
       display: flex;
       position: static;
       align-items: center;
-      padding-bottom: 0;
-      padding-right: 0;
+      padding: 0 0 0 10px;
 
       nav{
         width: 100%;
@@ -315,6 +313,7 @@ and (min-width: 768px){
         top: 90px;
         width: 400px;
         padding: 20px;
+        box-shadow: 0 0 60px rgba(217, 217, 217, 1);
 
         ul{
           display: flex;
@@ -325,15 +324,15 @@ and (min-width: 768px){
             font-size: 20px;
           }
         }
-
-
       }
 
       nav.one-trouble.active{
         display: block;
+        padding-top: 20px;
       }
 
       nav.double-trouble{
+        padding: 20px 0 0;
 
         ul{
           display: flex;
@@ -354,8 +353,6 @@ and (min-width: 768px){
       nav.double-trouble.active{
         display: block;
       }
-
-
     }
 
     &-social{
