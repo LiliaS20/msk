@@ -6,61 +6,68 @@
 
     //POPUP MENU ON
 
-    function forRes() {
-      var wWindow = $(window).width();
-      console.log(wWindow);
+    var wWindow = $(window).width();
 
-      if (wWindow < 768) {
+    if (wWindow < 768) {
+
+      $('.header-logo__burger').on('click', function () {
+
+        $('.header').toggleClass('burger-opened');
+
+        $('.header-nav, .header-social').fadeToggle(300);
+
+      });
+
+    } else {
+
+      var scrolled = $(window).scrollTop();
+
+      console.log(scrolled);
+
+      if (scrolled > 110){
+
+        $('.one-trouble').removeClass('active');
+        $('.double-trouble').addClass('active');
+
+        $('.header-logo__burger').addClass('active');
 
         $('.header-logo__burger').on('click', function () {
 
+          $('.one-trouble').toggleClass('move-left');
+
           $('.header').toggleClass('burger-opened');
 
-          $('.header-nav, .header-social').fadeToggle(300);
+        });
+
+        $('main').on('click', function () {
+
+          $('.one-trouble').removeClass('move-left');
+
+          $('.header').removeClass('burger-opened');
 
         });
 
       } else {
 
-        $(window).scroll(scrollArrow);
+        $('.one-trouble').addClass('active');
 
-        function scrollArrow() {
-          var scrolled = $(window).scrollTop();
+        $('.double-trouble').removeClass('active');
 
-          if (scrolled > 130){
+        $('.header-logo__burger').removeClass('active');
 
-            $('.one-trouble').removeClass('active');
-            $('.double-trouble').addClass('active');
-            $('.header-logo__burger').addClass('active');
+        $('.one-trouble').removeClass('move-left');
 
-            $('.header-logo__burger').on('click', function () {
-
-              $('.one-trouble').toggleClass('move-left');
-              $('.header').toggleClass('burger-opened');
-            });
-
-
-
-          } else {
-
-            $('.one-trouble').addClass('active');
-            $('.double-trouble').removeClass('active');
-            $('.header-logo__burger').removeClass('active');
-
-            $('.one-trouble').removeClass('move-left');
-
-          }
-        }
+        $('.header').removeClass('burger-opened');
       }
+
     }
 
-    forRes();
 
     //POPUP MENU OFF
 
     //SLIDER ON
 
-    $('.owl-carousel').owlCarousel({
+    $('.def-slider').owlCarousel({
       loop:true,
       margin:0,
       nav:true,
@@ -80,30 +87,46 @@
 
     //SLIDER OFF
 
-    /* var form = document.getElementById("myform");
-    var formm = document.getElementById("thank");
-    var butform = document.getElementById("buy");
-    var send = document.getElementById("send");
-    var span = document.getElementsByClassName("close")[0];
+    //SLIDER POPUP CREATURE ON
 
-    butform.onclick = function (){
-      form.style.display = "block";
-    };
+    $('.def-slider button').on('click', function () {
 
-    span.onclick = function (){
-      form.style.display = "none";
-    };
+      var lila = $(this).closest('.item').find('.items_for-popup').html();
 
-    send.onclick = function () {
-      formm.style.display = "block";
-      form.style.display = "none";
-    };
+      console.log(lila);
 
-    window.onclick = function(event) {
-      if (event.target == form) {
-        form.style.display = "none"
-      }
-    }; */
+      $('.p-slider').html(lila);
+      $('.slider-popup').fadeIn();
+
+      $('.p-slider').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:true,
+        dots: false,
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:1
+          },
+          1000:{
+            items:1
+          }
+        }
+      });
+
+    });
+
+    //SLIDER POPUP CREATURE OFF
+
+    //SLIDER popup ON
+
+
+
+    //SLIDER popup OFF
+
+  //  POPUP ON
 
     $('.creature__cards button, .ads button').on('click', function () {
 
@@ -113,8 +136,23 @@
 
     $('#myform span.close').on('click', function () {
 
+
       $('#myform').fadeToggle();
 
     });
+
+  //  POPUP OFF
+
+  //  SCROLL ON
+
+    $('.link-scroll').on('click', function (e) {
+
+      e.preventDefault();
+      var aid = $(this).attr("href");
+      $('html,body').animate({scrollTop: $(aid).offset().top - 100},'slow');
+
+    });
+
+  //  SCROLL OFF
 
   });

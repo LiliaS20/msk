@@ -8,6 +8,10 @@
   background-color: #fff;
   z-index: 1000;
 
+  .row{
+    position: relative;
+  }
+
   &-top {
    // margin-bottom: 65px;
   }
@@ -82,12 +86,12 @@
 
   &-nav {
     display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 70px;
+    //position: absolute;
+    //left: 0;
+    //right: 0;
+    //top: 70px;
     background: #fff;
-    padding-bottom: 20px;
+    padding-top: 20px;
 
     nav {
 
@@ -106,6 +110,7 @@
             display: block;
             padding: 3px 0;
             font-size: 22px;
+            border-bottom: 2px solid transparent;
 
             &:hover {
               border-bottom: 2px solid $orangecolor;
@@ -114,7 +119,6 @@
         }
       }
     }
-
 
     nav.double-trouble {
       display: none;
@@ -125,10 +129,10 @@
     display: none;
     justify-content: center;
     background-color: #fff;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 160px;
+    //position: absolute;
+    //left: 0;
+    //right: 0;
+    //top: 160px;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -202,11 +206,7 @@
       }
     }
   }
-
-
 }
-
-
 
 
 @media screen
@@ -337,53 +337,53 @@ and (min-width: 768px){
 @media screen
 and (min-width: 1200px){
 
-  .header{
+  .header {
     padding-top: 15px;
     padding-bottom: 15px;
 
-    &-logo{
+    &-logo {
 
-      &__burger{
+      &__burger {
         margin-right: 15px;
       }
 
-      &__link{
+      &__link {
 
-        img{
+        img {
           width: 100px;
           height: 100px;
           margin-right: 20px;
         }
 
-        span{
+        span {
           font-size: 26px;
         }
       }
     }
 
-    &-nav{
+    &-nav {
 
-      nav{
+      nav {
 
-        ul{
+        ul {
           justify-content: space-around;
 
-          li{
+          li {
 
-            a{
+            a {
               font-size: 24px;
             }
           }
         }
       }
 
-      nav.double-trouble{
+      nav.double-trouble {
 
-        ul{
+        ul {
 
-          li{
+          li {
 
-            a{
+            a {
               font-size: 20px;
               text-align: center;
               padding: 0;
@@ -393,22 +393,27 @@ and (min-width: 1200px){
       }
     }
 
-    &-social{
+    &-social {
 
-      &__link{
+      &__link {
         margin-bottom: 5px;
 
-        &:last-child{
+        &:last-child {
           margin-bottom: 0;
         }
 
-        img{
+        img {
           width: 40px;
           height: 40px;
         }
+
+        &.phone {
+
+          span {
+            font-size: 25px;
+          }
+        }
       }
     }
-
-
   }
 }
