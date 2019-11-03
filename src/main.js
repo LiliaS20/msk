@@ -28,6 +28,7 @@
 
         $('.one-trouble').removeClass('active');
         $('.double-trouble').addClass('active');
+        $('.three-trouble').addClass('active');
 
         $('.header-logo__burger').addClass('active');
 
@@ -52,6 +53,8 @@
         $('.one-trouble').addClass('active');
 
         $('.double-trouble').removeClass('active');
+
+        $('.three-trouble').removeClass('active');
 
         $('.header-logo__burger').removeClass('active');
 
@@ -122,13 +125,18 @@
 
     //SLIDER popup ON
 
+    $('.slider-popup__back').on('click', function(event){
 
+      if ($(event.target).closest(".slider-popup__cont").length) return;
+      $(".slider-popup").fadeOut("slow");
+      event.stopPropagation();
+    });
 
     //SLIDER popup OFF
 
   //  POPUP ON
 
-    $('.creature__cards button, .ads button').on('click', function () {
+    $('.creature__cards button, .ads button, .bitrix button, .about button').on('click', function () {
 
       $('#myform').fadeToggle();
 
@@ -149,7 +157,7 @@
 
       e.preventDefault();
       var aid = $(this).attr("href");
-      $('html,body').animate({scrollTop: $(aid).offset().top - 100},'slow');
+      $('html,body').animate({scrollTop: $(aid).offset().top - 135},'slow');
 
     });
 
