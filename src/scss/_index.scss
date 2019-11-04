@@ -104,11 +104,11 @@
   .creature {
     margin-bottom: 60px;
 
-    .row:last-child{
+    .row:last-child {
 
-      .creature__cards{
+      .creature__cards {
 
-        .card:last-child{
+        .card:last-child {
           margin-bottom: 0;
         }
       }
@@ -117,23 +117,24 @@
     &__info {
       margin-bottom: 30px;
 
-      .title {
-      }
-
-      &__top {
-
-        img {
-          margin-bottom: 30px;
-        }
-      }
-
-      &__bottom {
-
-        .title {
-          display: none;
-        }
+      .img {
+        margin-bottom: 30px;
+        float: left;
       }
     }
+
+    .creature__info.mobile {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        order: 2;
+      }
+
+      .img {
+      order: 1;
+    }
+  }
 
     &__slider {
       min-height: 600px;
@@ -213,7 +214,6 @@
     }
 
     &__cards {
-
     }
   }
 

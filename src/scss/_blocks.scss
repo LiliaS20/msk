@@ -1,5 +1,3 @@
-
-
 .card {
   padding: 30px 20px;
   margin-bottom: 30px;
@@ -120,13 +118,14 @@
   }
 
   .container {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    margin: 0;
-    transform: translate(-50%, -50%);
+  }
 
     &-cont {
+      position: relative;
+      left: 50%;
+      top: 50%;
+      margin: 0;
+      transform: translate(-50%, -50%);
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -136,7 +135,7 @@
       width: 760px;
       max-width: calc(100% - 30px);
 
-      &.close {
+      .close {
         position: absolute;
         right: 10px;
         top: -5px;
@@ -151,12 +150,6 @@
         }
       }
 
-      h4 {
-        font-size: 30px;
-        color: $bluecolor;
-        margin-bottom: 25px;
-      }
-
       input {
         height: 50px;
         margin-bottom: 25px;
@@ -168,15 +161,26 @@
           border: 1px solid $orangecolor;
         }
       }
-
-      p {
-        font-size: 13px !important;
-        line-height: 24px !important;
-        text-align: center;
-        padding-top: 10px;
-      }
     }
+
+  .form-cont h4 {
+    font-size: 26px;
+    color: $bluecolor;
+    margin-bottom: 25px;
   }
+
+  .form-cont p {
+    font-size: 13px !important;
+    line-height: 24px !important;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .form-cont .blue-but button {
+    width: 220px;
+  }
+
+
 }
 
 .formm {

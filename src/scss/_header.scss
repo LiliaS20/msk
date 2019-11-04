@@ -8,12 +8,12 @@
   background-color: #fff;
   z-index: 1000;
 
-  .row{
+  .row {
     position: relative;
   }
 
   &-top {
-   // margin-bottom: 65px;
+    // margin-bottom: 65px;
   }
 
   &-logo {
@@ -101,7 +101,6 @@
         padding: 0;
         margin-bottom: 20px;
 
-
         li {
           margin-bottom: 5px;
 
@@ -110,10 +109,9 @@
           }
         }
 
-          a {
-            font-size: 20px;
-          }
-
+        a {
+          font-size: 20px;
+        }
       }
     }
 
@@ -127,8 +125,8 @@
 
           a {
             display: inline;
-            padding: 0 0 5px;
-            font-size: 20px;
+            padding: 0;
+            font-sizee: 20px;
             border-bottom: 2px solid $orangecolor;
           }
 
@@ -249,55 +247,53 @@
   }
 }
 
+@media screen and (min-width: 768px) {
 
-@media screen
-and (min-width: 768px){
-
-  .header{
+  .header {
     padding-bottom: 10px;
 
-    &-logo{
+    &-logo {
       padding-right: 0;
 
-      &__burger{
+      &__burger {
         opacity: 0;
 
-        &.active{
+        &.active {
           opacity: 1;
           cursor: pointer;
         }
       }
 
-      &__link{
+      &__link {
 
-        img{
-          margin-right: 10px;
+        img {
+          margin-right: 4px;
         }
 
-        span{
+        span {
           //font-size: 20px;
-          font-size: 16px;
+          font-size: 14px;
         }
       }
     }
 
-    &-nav{
+    &-nav {
       display: flex;
       position: static;
       align-items: center;
       padding: 0 0 0 10px;
 
-      nav{
+      nav {
         width: 100%;
         display: none;
 
-        ul{
+        ul {
           display: flex;
           justify-content: space-between;
 
-          li{
+          li {
 
-            a{
+            a {
               font-size: 18px;
               padding: 0 5px 7px;
             }
@@ -305,7 +301,7 @@ and (min-width: 768px){
         }
       }
 
-      nav.one-trouble.move-left:not(.active){
+      nav.one-trouble.move-left:not(.active) {
         background-color: #fff; //red;
         display: block;
         position: absolute;
@@ -315,7 +311,7 @@ and (min-width: 768px){
         padding: 20px;
         box-shadow: 0 0 60px rgba(217, 217, 217, 1);
 
-        ul{
+        ul {
           display: flex;
           flex-direction: column;
 
@@ -326,22 +322,22 @@ and (min-width: 768px){
         }
       }
 
-      nav.one-trouble.active{
+      nav.one-trouble.active {
         display: block;
         padding-top: 20px;
       }
 
-      nav.double-trouble{
+      nav.double-trouble {
         padding: 20px 0 0;
 
-        ul{
+        ul {
           display: flex;
           align-items: center;
           justify-content: space-between;
 
-          li{
+          li {
 
-            a{
+            a {
               font-size: 16px;
               text-align: center;
               padding: 0 5px 7px;
@@ -350,39 +346,37 @@ and (min-width: 768px){
         }
       }
 
-      nav.double-trouble.active{
+      nav.double-trouble.active {
         display: block;
       }
     }
 
-    &-social{
+    &-social {
       display: flex;
       justify-content: flex-end;
       position: static;
       padding-bottom: 0;
       padding-top: 0;
 
-      &__wrap{
+      &__wrap {
         flex-wrap: wrap;
         justify-content: space-between;
       }
 
-      &__link{
+      &__link {
         margin-bottom: 10px;
         margin-right: 0;
 
-        &:last-child{
+        &:last-child {
           margin-bottom: 0;
         }
       }
     }
 
-
   }
 }
 
-@media screen
-and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
 
   .header {
     padding-top: 15px;
@@ -428,7 +422,7 @@ and (min-width: 1200px){
       nav.one-trouble {
 
         ul.none {
-         display: none;
+          display: none;
         }
       }
 

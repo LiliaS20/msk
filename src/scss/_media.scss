@@ -47,24 +47,10 @@ and (min-width: 768px) {
       }
 
       &__info {
-        display: flex;
-        align-items: center;
+        //display: flex;
+        //align-items: center;
         margin-bottom: 80px;
-
-        .title {
-          display: none;
-        }
-
-        &__top {
-        }
-
-        &__bottom {
-
-          .title {
-            display: block;
-          }
-        }
-      }
+       }
 
       &__slider {
 
