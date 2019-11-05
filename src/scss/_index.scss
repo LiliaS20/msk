@@ -204,6 +204,8 @@
 
           .items_for-popup{
             display: none;
+
+
           }
         }
       }
@@ -271,9 +273,7 @@
       padding-bottom: 30px;
     }
 
-    .creature {
-
-      &__info {
+    .creature__info {
 
         &__bottom {
 
@@ -283,10 +283,23 @@
               width: 100%;
               height: 65px;
             }
+          }
+        }
+    }
+
+    .creature__info.mobile {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          order: 2;
+        }
+
+        .img {
+          order: 1;
         }
       }
-    }
-   }
+
   }
 
   .advant {

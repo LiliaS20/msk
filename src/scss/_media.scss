@@ -52,6 +52,16 @@ and (min-width: 768px) {
         margin-bottom: 80px;
        }
 
+      .creature__info.mobile {
+        display: block;
+
+        .img {
+          width: 50%;
+        }
+
+
+      }
+
       &__slider {
 
         .owl-carousel{
@@ -216,6 +226,21 @@ and (min-width: 768px) {
 
       }
       }
+  }
+}
+
+@media screen
+and (min-width: 1000px){
+
+  .main {
+
+    .creature__info{
+
+      h2 {
+
+        padding-top: 85px;
+      }
+    }
   }
 }
 

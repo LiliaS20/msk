@@ -39,6 +39,10 @@
 
             $('.one-trouble').toggleClass('move-left');
 
+            $( '.one-trouble a' ).on("click", function(){
+              $('.one-trouble').removeClass('move-left');
+            });
+
             $('.header').toggleClass('burger-opened');
 
           });
