@@ -45,37 +45,37 @@
     }
   }
 
-    p {
-      font-size: 26px;
-      text-align: right;
-      padding-bottom: 30px;
-      display: flex;
-      justify-content: flex-end;
-    }
+  p {
+    font-size: 26px;
+    text-align: right;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
-  
+
 .button {
-   display: flex;
-   justify-content: center;
+  display: flex;
+  justify-content: center;
 
-   button {
-     cursor: pointer;
-     width: 220px;
-     height: 50px;
-     text-align: center;
-     color: #fff;
-     font-size: 24px;
-     font-weight: 600;
-     background-color: $orangecolor;
-     border: 1px solid $orangecolor;
-     transition: background-color 1s;
+  button {
+    cursor: pointer;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: $orangecolor;
+    border: 1px solid $orangecolor;
+    transition: background-color 1s;
 
-     &:hover {
-       background-color: #fff;
-       color: $orangecolor;
-     }
-   }
- }
+    &:hover {
+      background-color: #fff;
+      color: $orangecolor;
+    }
+  }
+}
 
 .blue-but {
   display: flex;
@@ -109,7 +109,7 @@
   bottom: 0;
 
   &__back {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
@@ -118,50 +118,55 @@
   }
 
   .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
-    &-cont {
-      position: relative;
-      left: 50%;
-      top: 50%;
-      margin: 0;
-      transform: translate(-50%, -50%);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      padding: 55px 20px 40px;
-      width: 760px;
-      max-width: calc(100% - 30px);
+  &-cont {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 55px 20px 40px;
+    width: 760px;
+    max-width: calc(100% - 30px);
 
-      .close {
-        position: absolute;
-        right: 10px;
-        top: -5px;
-        color: #acacac;
-        font-size: 80px;
+    .close {
+      position: absolute;
+      right: 5px;
+      top: -10px;
+      color: #acacac;
+      font-size: 80px;
+      cursor: pointer;
 
-        &:hover,
-        &:focus {
-          color: #000;
-          text-decoration: none;
-          cursor: pointer;
-        }
-      }
-
-      input {
-        height: 50px;
-        margin-bottom: 25px;
-        padding-left: 20px;
-        width: 100%;
-        border: 1px solid $bluecolor;
-
-        &:hover {
-          border: 1px solid $orangecolor;
-        }
+      &:hover,
+      &:focus {
+        color: #000;
+        text-decoration: none;
       }
     }
+
+    input {
+      height: 50px;
+      margin-bottom: 25px;
+      padding-left: 20px;
+      width: 100%;
+      border: 1px solid $bluecolor;
+
+      &:hover {
+        border: 1px solid $orangecolor;
+      }
+    }
+
+    &__out{
+      display: none;
+    }
+  }
 
   .form-cont h4 {
     font-size: 26px;
@@ -179,13 +184,6 @@
   .form-cont .blue-but button {
     width: 220px;
   }
-
-
-}
-
-.formm {
-  display: none;
-  background-color: red;
 
 }
 
@@ -219,10 +217,7 @@
   }
 }
 
-
-
-@media screen
-and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
   .main .owl-carousel .owl-nav {
     width: 100%;
@@ -245,25 +240,13 @@ and (min-width: 768px) {
     }
   }
 
-  .form {
-
-    &-cont {
-
-      .close {
-        right: 26px;
-        top: 0;
-      }
-    }
-  }
-
-  .card.card-15{
+  .card.card-15 {
     margin-right: 30px;
     max-width: calc(50% - 15px);
   }
 }
 
-@media screen
-and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
   .main .owl-carousel .owl-nav {
     width: 100%;
@@ -273,11 +256,11 @@ and (min-width: 1200px) {
     }
 
     .owl-prev {
-      left: -15%;
+      left: 0;
     }
 
     .owl-next {
-      right: -15%;
+      right: 0;
     }
 
   }
@@ -290,7 +273,7 @@ and (min-width: 1200px) {
 
     .button {
 
-      button{
+      button {
         width: 200px;
         height: 40px;
         font-size: 20px;
@@ -298,7 +281,7 @@ and (min-width: 1200px) {
       }
     }
   }
-  }
+}
 
 
 

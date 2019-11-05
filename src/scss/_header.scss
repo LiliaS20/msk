@@ -118,7 +118,7 @@
     nav.one-trouble {
 
       ul.three-trouble {
-        display: none;
+        display: block;
 
         li {
           margin-bottom: 10px;
@@ -348,6 +348,10 @@
 
       nav.double-trouble.active {
         display: block;
+      }
+
+      nav.one-trouble ul.three-trouble{
+        display: none!important;
       }
     }
 
