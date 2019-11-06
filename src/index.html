@@ -372,7 +372,7 @@
 
       <div class="creature__cards ">
 
-        <div class="col-12 col-md-6 card card-15" id="scroll-landing">
+        <div class="col-12 col-md-6 card card-15 title-input" id="scroll-landing">
           <h3>Лендинг</h3>
           <ul>
             <li>1 страница с индивидуальным дизайном или шаблоном;</li>
@@ -389,7 +389,7 @@
 
         </div>
 
-        <div class="col-12 col-md-6 card card-15" id="scroll-cutaway">
+        <div class="col-12 col-md-6 card card-15 title-input" id="scroll-cutaway">
           <h3>Визитка</h3>
           <ul>
             <li>До 5 страниц с индивидуальным дизайном или шаблоном;</li>
@@ -412,7 +412,7 @@
 
       <div class="creature__cards">
 
-          <div class="col-12 col-md-6 card card-15" id="scroll-catalog">
+          <div class="col-12 col-md-6 card card-15 title-input" id="scroll-catalog">
             <h3>Каталог</h3>
             <ul>
               <li>До 10 страниц с индивидуальным дизайном или шаблоном;</li>
@@ -429,7 +429,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 card card-15" id="scroll-score">
+          <div class="col-12 col-md-6 card card-15 title-input" id="scroll-score">
             <h3>Интернет-магазин</h3>
             <ul>
               <li>До 20 страниц с индивидуальным дизайном или шаблоном;</li>
@@ -464,7 +464,7 @@
 
       <div class="col-12 col-md-6 ads__bottom">
 
-        <div class="card bottom" id="scroll-google">
+        <div class="card bottom title-input" id="scroll-google">
           <h3>Google</h3>
           <div class="center">
             <ul>
@@ -479,7 +479,7 @@
           </div>
         </div>
 
-        <div class="card bottom" id="scroll-yandex">
+        <div class="card bottom title-input" id="scroll-yandex">
           <h3>Яндекс.Директ</h3>
           <div class="center">
             <ul>
@@ -504,7 +504,7 @@
 
     <div class="row">
 
-      <div class="col-12 creature__info mobile">
+      <div class="col-12 creature__info title-input mobile">
 
         <div class="img">
           <img src="./files/imgs/bitrix.png" alt="">
@@ -610,7 +610,7 @@
 
         </div>
 
-        <div class="col-12 col-md-6 creature__info__bottom">
+        <div class="col-12 col-md-6 creature__info__bottom title-input">
           <div class="titl">
             <h2>О нас</h2>
             <p class="lk">Битрикс24 — это облачный сервис, который помогает организовать и упорядочить ведение проектов компании, следить за их своевременным выполнением, вести клиентскую базу и общаться друг с другом — и все это внутри одного окна. Можно создавать проекты, делегировать задачи и приглашать в них клиентов.
@@ -656,22 +656,27 @@
       <div class="row">
         <div class="col-12">
          <div class="form-cont">
-            <span class="close">
+
+           <form class="def-form">
+             <span class="close">
               &times
           </span>
-           <h4>Заказать звонок</h4>
-           <input type="text" value placeholder="Ваше имя">
-           <input type="tel" value placeholder="Телефон">
-           <div class="blue-but">
-             <button id="send">Отправить</button>
-           </div>
-           <p class="f">Нажимая "Отправить", Вы принимаете условия Соглашения на обработку персональных данных.</p>
+             <h4>Заказать звонок</h4>
+             <input type="hidden" class="form_title" data-send="title">
+             <input type="text" value placeholder="Ваше имя" data-send="name" id="name" required>
+             <input type="tel" value placeholder="Телефон" data-send="phone" id="phone" required>
+             <input type="submit" class="send" value="Отправить">
+             <div class="blue-but">
+               <button id="send">Отправить</button>
+             </div>
+             <p class="f">Нажимая "Отправить", Вы принимаете условия Соглашения на обработку персональных данных.</p>
 
-           <div class="form-cont__out">
-             <h4>Спасибо!</h4>
-             <img src="./files/imgs/message.png" alt="">
-             <p>Ваша заявка принята</p>
-           </div>
+             <div class="form-cont__out">
+               <h4>Спасибо!</h4>
+               <img src="./files/imgs/message.png" alt="">
+               <p>Ваша заявка принята</p>
+             </div>
+           </form>
 
          </div>
         </div>

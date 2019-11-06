@@ -205,13 +205,16 @@
 
   //  POPUP ON
 
-    $('.creature__cards button, .ads button, .bitrix button, .about button').on('click', function () {
-
+    $('.creature__cards button, .ads button, .bitrix button, .about button').on('click', function (e) {
+      event.preventDefault(e);
+      var titleAtr = $(this).closest('.title-input').find('h2, h3').text();
+      console.log(titleAtr);
+      $(".form_title").val(titleAtr);
       $('#myform').fadeToggle();
 
     });
 
-    $('#myform span.close').on('click', function () {
+    $('#myform span.close, #myform .form__back').on('click', function () {
 
 
       $('#myform').fadeToggle();
@@ -231,5 +234,40 @@
     });
 
   //  SCROLL OFF
+
+
+  //  POPUP FORM ON
+
+    $('form').on('submit', function (e) {
+      e.preventDefault();
+      var data = new FormData();
+      data.append('action', 'form_action');
+      var dataSend = this.querySelectorAll('[data-send]');
+
+      for (var i = 0; i < dataSend.length; i++) {
+        var text, checked;
+        data.append(dataSend[i].getAttribute('data-send'), dataSend[i].value);
+        console.log(dataSend[i].value);
+        dataSend[i].value = '';
+
+      }
+
+      $.ajax({
+        url: ajax_params.ajax_url,
+        type: 'POST',
+        data: data,
+        processData: false,
+        contentType: false,
+        success: function (res) {
+          $('.form').fadeOut();
+          alert('Спасибо за Вашу заявку.');
+        }
+      });
+
+    });
+
+    // POPUP FORM OFF
+
+    $("#phone").mask("+7(999)999-99-99");
 
   });
