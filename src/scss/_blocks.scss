@@ -136,6 +136,23 @@
     width: 760px;
     max-width: calc(100% - 30px);
 
+    .def-form {
+      width: 100%;
+
+      .send {
+        background-color: $bluecolor;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 600;
+        padding-left: 0;
+        cursor: pointer;
+        width: 300px;
+        height: 50px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
     .close {
       position: absolute;
       right: 5px;
@@ -181,11 +198,6 @@
     text-align: center;
     padding-top: 10px;
   }
-
-  .form-cont .blue-but button {
-    width: 220px;
-  }
-
 }
 
 .main .owl-carousel .owl-nav {

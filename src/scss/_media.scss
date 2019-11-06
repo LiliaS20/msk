@@ -147,6 +147,21 @@ and (min-width: 768px) {
       }
     }
 
+    .bitrix {
+
+      &__info {
+        display: block;
+        margin-bottom: 80px;
+
+        .img {
+          width: 50%;
+          float: left;
+          padding: 110px 0;
+          margin-right: 20px;
+        }
+      }
+    }
+
     .advant {
       width: 100%;
 
@@ -184,48 +199,28 @@ and (min-width: 768px) {
 
     .about {
 
-      .creature__info {
-          display: flex;
+      .about__info {
+        display: block;
+
+        .img {
+          width: 50%;
+          float: left;
+          margin-right: 30px;
+        }
+
+        .blue-but {
           align-items: center;
-
-        p {
-          margin-bottom: 0;
+          margin-top: 40px;
         }
+      }
 
-          .title {
-            display: none;
-          }
-
-          &__top {
-
-              img {
-                margin: 45px 0;
-              }
-          }
-
-          &__bottom {
-            height: 100%;
-
-            .titl {
-              display: block;
-            }
-
-            .blue-but {
-              align-items: center;
-              height: 50%;
-            }
-
-
-          }
+      .blue-but {
+        button {
+          width: 370px;
+          height: 100px
         }
-
-      .blue-but{ button{
-        width: 370px;
-        height: 100px
       }
-
-      }
-      }
+    }
   }
 }
 
@@ -241,6 +236,27 @@ and (min-width: 1000px){
         padding-top: 85px;
       }
     }
+
+    .bitrix {
+
+      &__info {
+
+        .img {
+          padding: 40px 0;
+        }
+      }
+    }
+
+    .about {
+
+      &__info {
+
+        h2 {
+          padding-top: 60px;
+        }
+      }
+    }
+
   }
 }
 
@@ -324,27 +340,25 @@ and (min-width: 1200px){
 
     .bitrix {
 
-      .creature {
+      &__info {
+        margin-bottom: 150px;
 
-        &__info {
+        .img {
+          padding: 20px 0 120px;
+        }
+        .button {
+          justify-content: left;
 
-          &__bottom {
-
-            .button {
-              justify-content: left;
-
-              button {
-                width: 50%;
-                height: 65px;
-              }
-            }
+          button {
+            width: 50%;
+            height: 65px;
           }
         }
       }
     }
 
     .advant {
-      margin-bottom: 110px;
+      margin-bottom: 130px;
 
       &__cont {
         padding-bottom: 30px;
@@ -397,32 +411,15 @@ and (min-width: 1200px){
       }
     }
 
-    .about{
-      .titl {
+    .about {
+    }
 
-        h2 {
-          margin: 35px 0;
-        }
-
-        p {
-        }
+    .about .about__info .blue-but {
+        margin-top: 100px;
       }
 
-      .creature {
-
-        &__info {
-
-          &__bottom {
-
-            .blue-but {
-
-              button {
-                width: 50%;
-              }
-            }
-          }
-        }
-      }
+    .about .about__info .blue-but button {
+      width: 50%;
     }
 
     .map {
