@@ -9,6 +9,58 @@
 </head>
 <body>
 
+<style>
+
+  #preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-color: #ffffff;
+  }
+
+  #preloader img {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  body.visible #preloader{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+  }
+
+  body.hidden #preloader {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+  }
+
+</style>
+
+<div id="preloader">
+  <img src="files/imgs/icons/logo.png" alt="">
+</div>
+
+<script>
+
+  window.onload = function () {
+    document.body.classList.add('visible');
+    window.setTimeout(function () {
+      document.body.classList.add('hidden');
+      document.body.classList.remove('visible');
+    }, 500);
+  }
+
+</script>
+
+
 //= ./blocks/header.html
 
 <main class="main">
@@ -40,7 +92,7 @@
             </ul>
           </li>
           <li>
-            <a href="#scroll-bitrix">Внедрение CRM Битрикс24
+            <a href="#scroll-bitrix" class="link-scroll">Внедрение CRM Битрикс24
               <span></span>
             </a>
             <ul>
@@ -522,7 +574,7 @@
 
   </div>
 
-  <section class="advant">
+  <section class="advant" >
     <div class="container">
 
       <h2 class="white">Наши <br> преимущества</h2>
@@ -572,7 +624,7 @@
     </div>
   </section>
 
-  <div class="container about">
+  <div class="container about" id="scroll-about">
 
     <div class="row">
 
@@ -632,8 +684,8 @@
 
           <ul>
             <li><a href="#"><img src="./files/imgs/icons/geo.png" alt=""> г. Пенза, ул. Красная, 9</a></li>
-            <li><a href="tel:+78412252525"><img src="./files/imgs/icons/sms.png" alt=""> 88412252525 </a></li>
-            <li><a href="#"><img src="./files/imgs/icons/ph.png" alt=""> support@website58.ru</a></li>
+            <li><a href="tel:+78412252525"><img src="./files/imgs/icons/ph.png" alt=""> 88412252525 </a></li>
+            <li><a href="mailto:support@website58.ru"><img src="./files/imgs/icons/sms.png" alt=""> support@website58.ru</a></li>
           </ul>
 
         </div>
