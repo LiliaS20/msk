@@ -14,7 +14,7 @@
 
       });
 
-      $('.move-left a, .header-social') .on('click', function () {
+      $('.header a, .header-social') .on('click', function () {
 
         $('.header-nav, .header-social').fadeOut();
 
@@ -49,6 +49,7 @@
 
             $( '.one-trouble a' ).on("click", function(){
               $('.one-trouble').removeClass('move-left');
+              $('.header').removeClass('burger-opened');
             });
 
             $('.header').toggleClass('burger-opened');
@@ -80,53 +81,6 @@
           $('.header').removeClass('burger-opened');
         }
       }
-
-      /*
-
-      var scrolled = $(window).scrollTop();
-
-      if (scrolled > 110){
-
-        console.log(scrolled);
-
-        $('.one-trouble').removeClass('active');
-        $('.double-trouble').addClass('active');
-        $('.three-trouble').addClass('active');
-
-        $('.header-logo__burger').addClass('active');
-
-        $('.header-logo__burger').on('click', function () {
-
-          $('.one-trouble').toggleClass('move-left');
-
-          $('.header').toggleClass('burger-opened');
-
-        });
-
-        $('main').on('click', function () {
-
-          $('.one-trouble').removeClass('move-left');
-
-          $('.header').removeClass('burger-opened');
-
-        });
-
-      } else {
-
-        $('.one-trouble').addClass('active');
-
-        $('.double-trouble').removeClass('active');
-
-        $('.three-trouble').removeClass('active');
-
-        $('.header-logo__burger').removeClass('active');
-
-        $('.one-trouble').removeClass('move-left');
-
-        $('.header').removeClass('burger-opened');
-      }
-
-      */
 
     }
 
@@ -257,7 +211,7 @@
   //  SCROLL OFF
 
 
-  //  POPUP FORM ON
+    //  POPUP FORM ON
 
     $('form').on('submit', function (e) {
       e.preventDefault();
@@ -289,6 +243,10 @@
 
     // POPUP FORM OFF
 
+    // MASK INPUT TEL ON
+
     $("#phone").mask("+7(999)999-99-99");
+
+    // MASK INPUT TEL OFF
 
   });

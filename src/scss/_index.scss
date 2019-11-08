@@ -290,6 +290,7 @@
 
       .img {
         order: 2;
+        margin-bottom: 25px;
       }
 
       p {
@@ -491,6 +492,10 @@
             }
           }
 
+          a.pointer-none {
+            pointer-events: none;
+
+          }
         }
       }
     }

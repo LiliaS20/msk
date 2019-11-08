@@ -636,7 +636,7 @@
           </p>
         </div>
         <h2>О нас</h2>
-        <p>Битрикс24 — это облачный сервис, который помогает организовать и упорядочить ведение проектов компании, следить за их своевременным выполнением, вести клиентскую базу и общаться друг с другом — и все это внутри одного окна. Можно создавать проекты, делегировать задачи и приглашать в них клиентов.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
         </p>
         <div class="button blue-but">
           <button>Узнать больше</button>
@@ -672,7 +672,7 @@
 
   </div>
 
-  <div class="map">
+  <div class="map" id="scroll-contact">
 
     <div>
 
@@ -683,7 +683,7 @@
         <div class="blue">
 
           <ul>
-            <li><a href="#"><img src="./files/imgs/icons/geo.png" alt=""> г. Пенза, ул. Красная, 9</a></li>
+            <li><a href="#" class="pointer-none"><img src="./files/imgs/icons/geo.png" alt=""> г. Пенза, ул. Красная, 9</a></li>
             <li><a href="tel:+78412252525"><img src="./files/imgs/icons/ph.png" alt=""> 88412252525 </a></li>
             <li><a href="mailto:support@website58.ru"><img src="./files/imgs/icons/sms.png" alt=""> support@website58.ru</a></li>
           </ul>
@@ -703,20 +703,24 @@
          <div class="form-cont">
 
            <form class="def-form">
-             <span class="close">
+             <!--<div class="form-cont__popup">-->
+               <span class="close">
               &times
-          </span>
-             <h4>Заказать звонок</h4>
-             <input type="hidden" class="form_title" data-send="title">
-             <input type="text" value placeholder="Ваше имя" data-send="name" id="name" required>
-             <input type="tel" value placeholder="Телефон" data-send="phone" id="phone" required>
-             <input type="submit" class="send" value="Отправить">
-             <p class="f">Нажимая "Отправить", Вы принимаете условия Соглашения на обработку персональных данных.</p>
-
+             </span>
+               <h4>Заказать звонок</h4>
+               <input type="hidden" class="form_title" data-send="title">
+               <input type="text" value placeholder="Ваше имя" data-send="name" id="name" required>
+               <input type="tel" value placeholder="Телефон" data-send="phone" id="phone" required>
+               <input type="submit" class="send" value="Отправить">
+               <p class="f">Нажимая "Отправить", Вы принимаете условия Соглашения на обработку персональных данных.</p>
+           <!--  </div>-->
              <div class="form-cont__out">
+               <span class="close">
+              &times
+             </span>
                <h4>Спасибо!</h4>
                <img src="./files/imgs/message.png" alt="">
-               <p>Ваша заявка принята</p>
+               <p>Ваша заявка принята.</p>
              </div>
            </form>
 
