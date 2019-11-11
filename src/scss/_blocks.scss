@@ -46,18 +46,13 @@
   }
 }
 
-.card p {
-  display: none;
+.creature .creature__cards .card p {
   text-align: right;
   padding-bottom: 30px;
   display: flex;
   justify-content: flex-end;
-}
-
-/*.creature__cards .card p .price {
-
   font-size: 26px;
-}*/
+}
 
 .button {
   display: flex;
@@ -247,6 +242,10 @@
     display: none;
   }
 }
+
+
+
+
 
 @media screen and (min-width: 768px) {
 
