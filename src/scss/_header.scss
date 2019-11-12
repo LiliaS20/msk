@@ -227,8 +227,8 @@
           height: 0;
 
           &::before {
-            width: 20px;
-            height: 2px;
+            width: 55px;
+            height: 5px;
             border-radius: 0;
             max-width: none;
             transform: rotate(45deg);
@@ -237,8 +237,8 @@
           }
 
           &::after {
-            width: 20px;
-            height: 2px;
+            width: 55px;
+            height: 5px;
             border-radius: 0;
             max-width: none;
             transform: rotate(-45deg);
@@ -322,9 +322,19 @@
           left: 200px;
           top: 110px;
           width: 400px;
-          padding: 20px;
-          padding-bottom: 0;
+          padding: 30px 20px 10px;
           box-shadow: 0 0 60px rgba(217, 217, 217, 1);
+
+          ul {
+
+            li {
+              margin-bottom: 15px;
+
+              ul {
+                margin-top: 25x;
+              }
+            }
+          }
         }
       }
 

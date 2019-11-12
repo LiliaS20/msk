@@ -62,17 +62,14 @@
 
 
 
-          $('main').on('click', function () {
+          /*$('main').on('click', function () {
 
             console.log(scrolled + 'net');
-
-
-           // $('.one-trouble').removeClass('move-left');
 
             $('.header').removeClass('burger-opened');
             $('.header-nav nav.menu__item .menu__item-double').fadeOut();
 
-          });
+          });*/
 
         /* // $('.one-trouble').removeClass('active');
          // $('.double-trouble').addClass('active');
@@ -270,5 +267,16 @@
     $("#phone").mask("+7(999)999-99-99");
 
     // MASK INPUT TEL OFF
+
+    // POPUP SEND ON
+
+    $('.send').on('click', function(){
+
+      $('.def-form').removeClass('form-cont__popup');
+      $('.def-form').addClass('form-cont__out');
+
+    });
+
+    // POPUP SEND OFF
 
   });
