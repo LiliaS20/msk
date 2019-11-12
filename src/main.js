@@ -10,13 +10,13 @@
 
         $('.header').toggleClass('burger-opened');
 
-        $('.header-nav, .header-social').fadeToggle(300);
+        $('.header-nav, .header-nav nav.menu__item .menu__item-double, .header-social').fadeToggle(300);
 
       });
 
       $('.header a, .header-social') .on('click', function () {
 
-        $('.header-nav, .header-social').fadeOut();
+        $('.header-nav,.header-social').fadeOut();
 
         $('.header').removeClass('burger-opened');
 
@@ -33,13 +33,44 @@
 
         if (scrolled > 210){
 
-          console.log(scrolled);
+         // console.log(scrolled);
 
           $('.header-logo__burger').addClass('active');
 
           $('.header-logo__burger.active').on('click', function () {
 
-            $('.menu__item-double').addClass('active');
+            console.log('da');
+
+
+            $('.header').toggleClass('burger-opened');
+
+            $('.header-nav nav.menu__item .menu__item-double').fadeToggle(300);
+
+          });
+
+          $('.header a, .header-social') .on('click', function () {
+
+            $('.header-nav nav.menu__item .menu__item-double').fadeOut();
+
+            $('.header').removeClass('burger-opened');
+
+          });
+
+          //  $('.header').addClass('burger-opened');
+          // $('.menu').ToggleClass('menu__item-double');
+           // $('menu__item-double').fadeToggle();
+
+
+
+          $('main').on('click', function () {
+
+            console.log(scrolled + 'net');
+
+
+           // $('.one-trouble').removeClass('move-left');
+
+            $('.header').removeClass('burger-opened');
+            $('.header-nav nav.menu__item .menu__item-double').fadeOut();
 
           });
 
