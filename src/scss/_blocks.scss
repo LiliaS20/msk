@@ -125,8 +125,10 @@
   }
 
   &-cont {
-    margin: 0 auto;
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -138,7 +140,8 @@
 
     .def-form {
       width: 100%;
-
+      display: flex;
+      justify-content: center;
 
     }
 
@@ -370,8 +373,12 @@
 
   .form .form-cont h4 {
     font-size: 60px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 70px;
+  }
+
+  .form .form-cont .font-cont-popup h4 {
+    text-align: left;
   }
 
   .form-cont .def-form p {
