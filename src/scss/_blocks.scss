@@ -4,6 +4,7 @@
   border: 1px solid #ffffff;
   box-shadow: 0 0 60px rgba(217, 217, 217, 1);
   transition: border 0.3s;
+  position: relative;
 
   &:last-child {
     margin-right: 0;
@@ -21,7 +22,7 @@
 
   ul {
     text-decoration: none;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
     list-style: none;
     padding-left: 10px;
 
@@ -44,6 +45,19 @@
       }
     }
   }
+}
+
+.creature .card .button {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.creature .card p {
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
 }
 
 .creature .creature__cards .card p {
@@ -251,6 +265,12 @@
 
 
 @media screen and (min-width: 768px) {
+
+  .creature .card {
+
+    max-width: calc(50% - 15px);
+
+  }
 
   .card.card-15 {
     margin-right: 30px;

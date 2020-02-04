@@ -162,6 +162,9 @@ $(document).ready(function () {
 
 
     $('#myform').fadeToggle();
+    $('.form-cont__out').fadeOut('300', function() {
+      $('.form-cont__popup').fadeIn();
+    });
 
   });
 

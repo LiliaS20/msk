@@ -108,6 +108,10 @@
 
       .creature__cards {
 
+        .card {
+          max-width: calc(50% - 15px);
+        }
+
         .card:last-child {
           margin-bottom: 0;
         }
@@ -228,6 +232,20 @@
       display: grid;
       align-items: center;
       margin-bottom: 30px;
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      ul {
+        margin-bottom: 10px;
+        padding-left: 20px;
+
+        li {
+          padding-top: 8px;
+          font-size: 16px;
+        }
+      }
     }
 
     &__bottom {
@@ -251,6 +269,7 @@
         flex-wrap: wrap;
 
         p {
+          font-size: 26px;
           display: flex;
           justify-content: flex-end;
           align-items: flex-end;
@@ -259,6 +278,10 @@
         }
       }
     }
+
+    /*.ads__top ul {
+      font-size: 22px;
+    }*/
   }
 
   .bitrix {
@@ -410,8 +433,6 @@
 
   .about {
 
-    .about {
-
       &__info {
         display: flex;
         flex-direction: column;
@@ -449,7 +470,6 @@
           }
         }
       }
-    }
   }
 
   .map {

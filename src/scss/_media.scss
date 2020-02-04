@@ -5,7 +5,7 @@ and (min-width: 768px) {
     padding-top: 91px;
 
     p {
-      font-size: 15px;
+      font-size: 16px;
       line-height: 26px;
     }
 
@@ -36,14 +36,11 @@ and (min-width: 768px) {
     .creature {
       margin-bottom: 90px;
 
-      .row:last-child{
+        &__cards{
 
-        .creature__cards{
+          .card {
 
-          .card:first-child{
-            margin-bottom: 0;
           }
-        }
       }
 
       &__info {
@@ -208,11 +205,19 @@ and (min-width: 768px) {
           width: 50%;
           float: left;
           margin-right: 30px;
+
+          img {
+            margin-bottom: 0;
+          }
         }
 
         .blue-but {
           align-items: center;
           margin-top: 40px;
+
+          button {
+            width: 50%;
+          }
         }
       }
 
@@ -289,7 +294,7 @@ and (min-width: 1200px){
     }
 
     .creature {
-      margin-bottom: 155px;
+      margin-bottom: 120px;
 
       &__info{
         margin-bottom: 130px;
@@ -331,6 +336,16 @@ and (min-width: 1200px){
 
     .ads {
       margin-bottom: 110px;
+
+      &__top {
+
+        ul {
+
+          li {
+            font-size: 18px;
+          }
+        }
+      }
 
       &__bottom {
 
@@ -414,14 +429,26 @@ and (min-width: 1200px){
     }
 
     .about {
-    }
 
-    .about .about__info .blue-but {
-        margin-top: 100px;
+      .about__info {
+        margin-bottom: 120px;
+
+        .img {
+
+          img {
+            margin-bottom: 70px;
+          }
+        }
+
+        .blue-but {
+          margin-top: 100px;
+
+          button {
+            width: 30%;
+            height: 65px;
+          }
+        }
       }
-
-    .about .about__info .blue-but button {
-      width: 50%;
     }
 
     .map {
